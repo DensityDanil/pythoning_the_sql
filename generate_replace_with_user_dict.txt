@@ -1,0 +1,14 @@
+charaters_list=[' ','_','-','+',')',"("]
+
+def generate_replace(field_to_fill_in,charaters_list):
+  charaters_list_len = len(charaters_list)
+  body = f'REPLACE('*charaters_list_len
+  body = body+field_to_fill_in+','
+  query=''
+  for i in charaters_list:
+    query+=f''' '{i}', '')\n to_split'''
+
+  query=','.join(query.split('to_split'))[0:-1]
+  return body+query
+
+#example: generate_replace('u.phone',charaters_list)
