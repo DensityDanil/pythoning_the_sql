@@ -3,4 +3,4 @@ IN PROGRESS
 
 Lite version of mysqlreplacer works with tabulation.
 <br>
-Mysqlreplacer is python function that help decrease mysql code length.
+Mysqlreplacer is python function that help decrease mysql code length of 20 main clauses.
