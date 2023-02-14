@@ -2,7 +2,7 @@ charaters_list=[' ','_','-','+',')',"("]
 
 def generate_replace(field_to_fill_in,charaters_list):
   charaters_list_len = len(charaters_list)
-  body = f'REPLACE('*charaters_list_len
+  body = f'REPLACE('*charaters_list_len #multiply string as many times as length of the input list
   body = body+field_to_fill_in+','
   query=''
   for i in charaters_list:
